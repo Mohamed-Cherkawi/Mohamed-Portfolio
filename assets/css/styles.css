@@ -338,6 +338,15 @@ img {
   transition: .3s;
 }
 
+.button--white {
+  background-color: #FFF;
+  color: var(--first-color);
+}
+
+.button--white:hover {
+  background-color: #FFF;
+}
+
 .button--flex {
   display: inline-flex;
   align-items: center;
@@ -461,8 +470,20 @@ img {
 }
 
 /**************** Skills Progress bar  ********************/
-.skills__html {
-  width: 90%;
+.skills__angular , .skills__spring {
+  width: 0%;
+}
+
+.skills__figma {
+  width: 45%;
+}
+
+.skills__java {
+  width: 55%;
+}
+
+.skills__symfony {
+  width: 60%;
 }
 
 .skills__css , .skills__bootstrap , .skills__mysql , .skills__adobexd , .skills__jquery {
@@ -473,8 +494,8 @@ img {
   width: 80%;
 }
 
-.skills__symfony {
-  width: 60%;
+.skills__html {
+  width: 90%;
 }
 /**************** Skills Progress bar  ********************/
 
@@ -659,14 +680,124 @@ img {
 }
 
 /*==================== PORTFOLIO ====================*/
+.portfolio__container {
+  overflow: initial;
+}
 
+.portfolio__content {
+  padding: 0 1.5rem;
+}
 
+.portfolio__img {
+  width: 265px;
+  border-radius: .5rem;
+  justify-self: center;
+}
+
+.portfolio__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.portfolio__description {
+  margin-bottom: var(--mb-0-75);
+}
+
+.portfolio__button:hover .button__icon {
+  transform: translateX(.25rem);
+}
+.swiper-button-prev::after , .swiper-button-next::after {
+  content: '';
+}
+.swiper-portfolio-icon{
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.swiper-button-prev {
+  left: -.5rem;
+}
+.swiper-button-next {
+  right: -.5rem;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: -2.5rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--first-color);
+}
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination-bullet {
+  outline: none;
+}
 /*==================== PROJECT IN MIND ====================*/
+.project {
+  text-align: center;
+}
 
+.project__bg {
+  background-color: var(--first-color-second);
+  padding-top: 3rem;
+}
+
+.project__title{
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-0-75);
+}
+
+.project__description {
+  margin-bottom: var(--mb-1-5);
+}
+
+.project__title , 
+.project__description {
+  color: #FFF;
+}
+
+.project__img {
+  width: 232px;
+  justify-self: center;
+}
 
 /*==================== TESTIMONIAL ====================*/
+.testimontal__data ,
+.testimontal__header {
+  display: flex;
+}
 
+.testimontal__grid {
+  justify-content: space-between;
+  margin-bottom: var(--mb-1);
+}
 
+.testimontal__img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: var(--mb-0-75);
+}
+
+.testimontal__name {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+}
+
+.testimontal__client {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.testimontal__description {
+  margin-top: 1rem;
+  /*color: var(--first-color);*/
+}
+
+.testimontal__icon-star {
+  color: var(--first-color);
+}
 /*==================== CONTACT ME ====================*/
 
 
